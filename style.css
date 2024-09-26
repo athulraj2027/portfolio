@@ -1,0 +1,277 @@
+body {
+    margin: 0;
+    color: white;
+    text-align: center;
+    background-color: #001F3F;
+
+
+
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+h1,
+h2 {
+    margin: 0%;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    background-color: #001F3F;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    flex-wrap: wrap;
+
+    height: 100vh;
+}
+
+.myPic {
+    background-color: #E7CCCC;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671116.jpg?w=740&t=st=1726991933~exp=1726992533~hmac=3f69bcb74d828225f37cf1d864004b7a731bd5d192867418cb187bb96df5dead);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    max-width: 400px;
+    max-height: 400px;
+
+}
+
+.intro {
+    text-align: center;
+    font-size: 25px;
+}
+
+.aboutDiv {
+    height: 100vh;
+    margin: 3rem 4rem;
+
+
+}
+
+p {
+    margin: 0;
+    line-height: 35px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: space-evenly;
+
+}
+
+.projectSlides button {
+    height: 50px;
+    background-color: #001F3F;
+    color: white;
+    padding: 10px;
+    border-radius: 7px;
+    font-family: "Quicksand", sans-serif;
+    border: 1px solid white;
+}
+
+.projectSlides button :hover {
+    background-color: white;
+    color: #001F3F;
+}
+
+.skills {
+    height: 100vh;
+}
+
+.projectDiv {
+    min-height: 100vh;
+
+    background: #001F3F;
+
+}
+
+
+
+.projectSlides {
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+
+
+
+.skillSlides {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.skillSlide {
+    height: 50px;
+    width: 300px;
+    border: 1px solid white;
+    margin: 3rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-div {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    margin: 10px 10px;
+}
+
+.image-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+.form {
+    height: 50vh;
+    background-color: #fff;
+    width: 30%;
+    min-height: 200px;
+    margin: 50px auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-width: 300px;
+}
+
+form input {
+    border-radius: 5px;
+    border: #001F3F 1px solid;
+    gap: 10px;
+    height: 40px;
+    min-width: 100px;
+
+}
+
+form button {
+    background-color: #001F3F;
+    color: white;
+    border-radius: 5px;
+}
+
+@media(min-width:1400px) {
+    .hero {
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    .myPic {
+        height: 600px;
+        width: 600px;
+    }
+
+    .intro {
+        font-size: 60px;
+    }
+
+    h1 {
+        font-size: 100px;
+        margin: 40px;
+    }
+
+    p {
+        font-size: 40px;
+        letter-spacing: 2px;
+        line-height: 80px;
+    }
+
+    .intro {
+        max-width: 50%;
+    }
+
+    .projectSlides {
+        font-size: 30px;
+        margin-bottom: 60px;
+    }
+
+    h3 {
+        font-size: 80px;
+        margin: 0%;
+    }
+
+    .image-div {
+        position: relative;
+        width: 600px;
+        height: 400px;
+        overflow: hidden;
+        margin: 10px 10px;
+    }
+
+    .projectSlides button {
+        height: 100px;
+        width: 200px;
+        font-size: 27px;
+    }
+
+    .skillSlide {
+        height: 150px;
+        width: 600px;
+        font-size: 30px;
+    }
+
+
+}
+
+@media(min-width:657px) and (max-width:1400px) {
+    .myPic {
+        height: 500px;
+        width: 500px;
+    }
+
+    .intro {
+        font-size: 40px;
+    }
+
+    .projectSlides {
+        font-size: 25px;
+        margin: 20px 0;
+    }
+
+    svg {
+        height: 60px;
+        width: 60px;
+    }
+}
+
+@media(max-width:657px) {
+    svg {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+
+
+#nameError , #emailError , #submitError {
+    color: red;
+    font-size: 10px;
+    margin-left: 20px;
+}
